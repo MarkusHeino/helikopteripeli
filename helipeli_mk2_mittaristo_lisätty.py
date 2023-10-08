@@ -27,7 +27,7 @@ def update_heliports_list():
     # poistetaan edellisen vuoron lista
     heliports_list.delete(0, tk.END)
 
-    # lisätään uusi kahdeksan kentä lista
+    # lisätään uusi kahdeksan kentän lista
     for i, (info, distance) in enumerate(eight_nearest, start=1):
         heliports_list.insert(tk.END, f"{i}. {info['name']} - {int(distance)} km")
 
